@@ -1,0 +1,13 @@
+type Car{
+state_number: String!
+owner: String
+mark: String!
+model: String!
+years: Int
+description_auto: String
+price_rental: String!
+}
+type Query{
+getCars: [Car!]!
+findOneCar (state_number: String!): Car
+}
